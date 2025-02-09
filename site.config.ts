@@ -44,7 +44,7 @@ export default siteConfig({
   //
   pageUrlOverrides: {
     '/portfolio': '42653a19e5d44660a9ebc7268d3c0bc0',
-    '/blog': '15869bf8a344800eb94debaf46c50120'
+    '/blog': '19569bf8a34480d5bf34d035aecaca82'
   },
   // pageUrlOverrides: null,
 
@@ -55,7 +55,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'Blog',
-      pageId: '15869bf8a344800eb94debaf46c50120'
+      pageId: '19569bf8a34480d5bf34d035aecaca82'
     },
     {
       title: 'Portfolio',
