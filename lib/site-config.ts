@@ -33,6 +33,9 @@ export interface SiteConfig {
 
   navigationStyle?: types.NavigationStyle
   navigationLinks?: Array<NavigationLink>
+
+  //custom config
+  enableUtterances?: boolean
 }
 
 export interface NavigationLink {

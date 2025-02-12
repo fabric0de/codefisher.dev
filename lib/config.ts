@@ -219,3 +219,6 @@ function invertPageUrlOverrides(
     }
   }, {})
 }
+
+//custom config
+export const enableUtterances = getSiteConfig('enableUtterances', true)

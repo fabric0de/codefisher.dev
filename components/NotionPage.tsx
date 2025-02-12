@@ -16,6 +16,7 @@ import { EmbeddedTweet, TweetNotFound, TweetSkeleton } from 'react-tweet'
 import { useSearchParam } from 'react-use'
 
 import type * as types from '@/lib/types'
+import Utterances from '@/components/Utterances'
 import * as config from '@/lib/config'
 import { mapImageUrl } from '@/lib/map-image-url'
 import { getCanonicalPageUrl, mapPageUrl } from '@/lib/map-page-url'
@@ -23,7 +24,6 @@ import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
-import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
@@ -262,10 +262,8 @@ export function NotionPage({
         image={socialImage}
         url={canonicalPageUrl}
       />
-
       {isLiteMode && <BodyClassName className='notion-lite' />}
       {isDarkMode && <BodyClassName className='dark-mode' />}
-
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
@@ -289,9 +287,14 @@ export function NotionPage({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
+        pageFooter={
+          config.enableUtterances ? (
+            isBlogPost ? (
+              <Utterances darkMode={isDarkMode} />
+            ) : null
+          ) : null
+        }
       />
-
-      <GitHubShareButton />
     </>
   )
 }

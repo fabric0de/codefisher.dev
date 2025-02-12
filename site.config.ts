@@ -61,5 +61,7 @@ export default siteConfig({
       title: 'Portfolio',
       pageId: '42653a19e5d44660a9ebc7268d3c0bc0'
     }
-  ]
+  ],
+  //custom config
+  enableUtterances: true
 })
