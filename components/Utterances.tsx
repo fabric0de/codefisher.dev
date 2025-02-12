@@ -14,7 +14,7 @@ export default function Utterances({ darkMode }: { darkMode: boolean }) {
         { type: 'set-theme', theme },
         'https://utteranc.es'
       )
-      return 
+      return
     }
 
     const script = document.createElement('script')
@@ -43,5 +43,5 @@ export default function Utterances({ darkMode }: { darkMode: boolean }) {
     }
   }, [darkMode])
 
-  return <div className='utterances' ref={utterancesRef} />
+  return <div className='utterances mt-8' ref={utterancesRef} />
 }
