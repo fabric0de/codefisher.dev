@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '15869bf8a344800eb94debaf46c50120',
+  rootNotionPageId: '42653a19e5d44660a9ebc7268d3c0bc0',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -43,7 +43,7 @@ export default siteConfig({
   // example:
   //
   pageUrlOverrides: {
-    '/portfolio': '42653a19e5d44660a9ebc7268d3c0bc0',
+    '/home': '42653a19e5d44660a9ebc7268d3c0bc0',
     '/blog': '19569bf8a34480d5bf34d035aecaca82'
   },
   // pageUrlOverrides: null,
