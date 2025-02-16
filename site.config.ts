@@ -46,7 +46,7 @@ export default siteConfig({
   //   '/home': '42653a19e5d44660a9ebc7268d3c0bc0',
   //   '/blog': '19569bf8a34480d5bf34d035aecaca82'
   // },
-  // pageUrlOverrides: null,
+  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
