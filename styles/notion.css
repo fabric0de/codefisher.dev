@@ -137,6 +137,13 @@
   margin: 0.75em 0;
 }
 
+.notion-callout .notion-page-icon-span {
+  margin: 0.75em 0;
+}
+.notion-callout .notion-page-icon-inline {
+  margin: 0.75em 0;
+}
+
 .notion-hr {
   margin: 2em 0;
 }
@@ -400,6 +407,6 @@
   color: var(--fg-color-2);
 }
 
-.notion-equation.notion-equation-block{
+.notion-equation.notion-equation-block {
   align-items: center;
 }
