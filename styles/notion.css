@@ -486,3 +486,7 @@
 .notion-equation.notion-equation-block {
   align-items: center;
 }
+
+.medium-zoom-image {
+  border-radius: 16px;
+}
